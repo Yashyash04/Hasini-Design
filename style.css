@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #33253d;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #eee5f4;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #8d55b5;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #33253d;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9b63c9;
+}
+
+/* HERO */
+
+#home {
+    min-height: 100vh;
+    padding: 170px 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 20% 30%, #f2e7fa 0, transparent 28%),
+        radial-gradient(circle at 80% 70%, #eee1f8 0, transparent 30%),
+        #ffffff;
+}
+
+#home > p:first-child {
+    color: #9b63c9;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+#home h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1.08;
+    font-weight: 600;
+    color: #33253d;
+    margin-bottom: 25px;
+}
+
+#home h2 span {
+    color: #9b63c9;
+    font-style: italic;
+}
+
+#home p:nth-of-type(2) {
+    max-width: 650px;
+    color: #756b7b;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+#home a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#home a:first-of-type {
+    background: #9b63c9;
+    color: white;
+}
+
+#home a:first-of-type:hover {
+    background: #7f48a7;
+    transform: translateY(-3px);
+}
+
+#home a:last-of-type {
+    border: 1px solid #9b63c9;
+    color: #9b63c9;
+}
+
+#home a:last-of-type:hover {
+    background: #f3eafa;
+}
+
+/* COMMON SECTION */
+
+section {
+    padding: 100px 30px;
+}
+
+section > p:first-child {
+    text-align: center;
+    color: #9b63c9;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+section > h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #33253d;
+    margin-bottom: 20px;
+}
+
+/* SERVICES */
+
+#services {
+    background: #faf7fc;
+}
+
+#services > div {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#services article {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    border: 1px solid #eee5f4;
+    transition: 0.3s;
+}
+
+#services article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(100, 60, 120, 0.12);
+}
+
+#services article h3:first-child {
+    color: #c6a3d9;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#services article h3:nth-child(2) {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    color: #4b3456;
+    margin-bottom: 12px;
+}
+
+#services article p {
+    font-size: 13px;
+    color: #766b7c;
+}
+
+/* GALLERY / COLLECTION */
+
+#gallery {
+    background: white;
+}
+
+#gallery > p:nth-of-type(2) {
+    text-align: center;
+    color: #766b7c;
+    margin-bottom: 40px;
+}
+
+#gallery > div {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#gallery > div p {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #f4eafa, #ffffff);
+    border: 1px solid #eee2f5;
+    color: #8d55b5;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#gallery > div p:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(100, 60, 120, 0.12);
+}
+
+/* ABOUT */
+
+#about {
+    background: #faf7fc;
+}
+
+#about > p:not(:first-child) {
+    max-width: 750px;
+    margin: 10px auto;
+    text-align: center;
+    color: #706676;
+    font-size: 15px;
+}
+
+/* CONTACT */
+
+#contact {
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 20%, #f0e3f8, transparent 35%),
+        #ffffff;
+}
+
+#contact > p:not(:first-child) {
+    color: #706676;
+    margin-bottom: 12px;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #9b63c9;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    background: #7f48a7;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+footer {
+    background: #33253d;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #d8cde0;
+    font-size: 13px;
+    margin: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 15px 18px;
+    }
+
+    nav h1 {
+        font-size: 21px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    #home {
+        padding: 140px 20px 80px;
+    }
+
+    #home h2 {
+        font-size: 45px;
+    }
+
+    section {
+        padding: 75px 20px;
+    }
+
+    section > h2 {
+        font-size: 35px;
+    }
+
+    #services > div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #gallery > div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    #home h2 {
+        font-size: 38px;
+    }
+
+    #services > div,
+    #gallery > div {
+        grid-template-columns: 1fr;
+    }
+
+    #gallery > div p {
+        height: 180px;
+    }
+}
+#services article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+#services article {
+    overflow: hidden;
+}
+
+#services article h3 {
+    line-height: 1.4;
+}
+/* Creative Gallery Layout */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.gallery-overlay {
+    padding: 15px;
+    background: #f3edff;
+    text-align: center;
+}
+
+.gallery-overlay h3 {
+    color: #6941a5;
+    margin-bottom: 6px;
+}
+
+.gallery-overlay p {
+    color: #555;
+    font-size: 14px;
+}
+/* Full-size image popup */
+.gallery-item img {
+    cursor: zoom-in;
+}
+
+#imagePopup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(20, 10, 35, 0.9);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: zoom-out;
+}
+
+#popupImage {
+    max-width: 90%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* Crop only the Banner photo */
+.gallery-item img[src*="banner.jpg"] {
+    object-fit: cover;
+    object-position: center;
+}
+.visiting-slider {
+    width: 100%;
+    overflow: hidden;
+    touch-action: pan-y;
+}
+
+.visiting-slide {
+    display: none;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 12px;
+}
