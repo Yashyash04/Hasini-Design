@@ -73,6 +73,9 @@ if (slider) {
     }
 
     window.changeSlide = changeSlide;
+    document.querySelectorAll(".slide-btn").forEach(button => {
+    button.style.cursor = "pointer";
+});
 
     slider.addEventListener("touchstart", function(event) {
         startX = event.touches[0].clientX;
