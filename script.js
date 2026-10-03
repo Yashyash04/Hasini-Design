@@ -58,6 +58,9 @@ if (slider) {
     const slides = slider.querySelectorAll(".visiting-slide");
     let currentSlide = 0;
     let startX = 0;
+    function changeSlide(direction) {
+    showVisitingSlide(currentSlide + direction);
+}
 
     function showVisitingSlide(index) {
         currentSlide = (index + slides.length) % slides.length;
