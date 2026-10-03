@@ -72,7 +72,25 @@ if (slider) {
         showVisitingSlide(currentSlide + direction);
     }
 
-    window.changeSlide = changeSlide;
+    window.changeSlide = function(direction) {
+    const slider = document.querySelector(".visiting-slider");
+    if (!slider) return;
+
+    const slides = slider.querySelectorAll(".visiting-slide");
+    let current = -1;
+
+    slides.forEach((slide, index) => {
+        if (getComputedStyle(slide).display !== "none") {
+            current = index;
+        }
+    });
+
+    const next = (current + direction + slides.length) % slides.length;
+
+    slides.forEach((slide, index) => {
+        slide.style.display = index === next ? "block" : "none";
+    });
+};
     document.querySelectorAll(".slide-btn").forEach(button => {
     button.style.cursor = "pointer";
 });
