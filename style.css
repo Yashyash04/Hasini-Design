@@ -502,10 +502,13 @@ margin: 0;
 }
 
 .brand img {
-width: 55px;
-height: 55px;
-object-fit: contain;
-border-radius: 50%;
+    width: 55px !important;
+    height: 55px !important;
+    max-width: 55px;
+    max-height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 nav ul {
