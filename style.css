@@ -494,7 +494,9 @@ flex-wrap: wrap;
 .brand {
 display: flex;
 align-items: center;
+justify-content: flex-start;
 gap: 12px;
+margin-right: auto;
 }
 
 .brand h1 {
@@ -502,13 +504,13 @@ margin: 0;
 }
 
 .brand img {
-    width: 55px !important;
-    height: 55px !important;
-    max-width: 55px;
-    max-height: 55px;
-    object-fit: contain;
-    border-radius: 50%;
-    flex-shrink: 0;
+width: 75px !important;
+height: 75px !important;
+max-width: 75px;
+max-height: 75px;
+object-fit: contain;
+border-radius: 50%;
+flex-shrink: 0;
 }
 
 nav ul {
