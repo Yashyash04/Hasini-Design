@@ -483,3 +483,34 @@ footer p {
     cursor: pointer;
     border-radius: 12px;
 }
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.brand h1 {
+margin: 0;
+}
+
+.brand img {
+width: 55px;
+height: 55px;
+object-fit: contain;
+border-radius: 50%;
+}
+
+nav ul {
+display: flex;
+align-items: center;
+gap: 22px;
+flex-wrap: wrap;
+}
